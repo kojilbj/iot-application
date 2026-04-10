@@ -18,5 +18,3 @@ spec:
           name: iot-application
       ports:
         - containerPort: 8888
-          name: http
-          protocol: TCP
