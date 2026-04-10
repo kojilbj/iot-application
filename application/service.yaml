@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: victory-royale
+  name: iot-application
 spec:
   ports:
   - port: 8888
     targetPort: 8888
   selector:
-    app: victory-royale
+    app: iot-application

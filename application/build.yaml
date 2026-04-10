@@ -2,20 +2,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: victory-royale
+  name: iot-application
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: victory-royale
+      app: iot-application
   template:
     metadata:
       labels:
-        app: victory-royale
+        app: iot-application
     spec:
       containers:
         - image: wil42/playground:v1
-          name: victory-royale
+          name: iot-application
       ports:
         - containerPort: 8888
           name: http
