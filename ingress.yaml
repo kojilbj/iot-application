@@ -4,8 +4,7 @@ metadata:
   name: app-routing
 spec:
   rules:
-    - host: iot-app.com
-      http:
+    - http:
         paths:
           - path: /
             pathType: Prefix
