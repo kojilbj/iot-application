@@ -4,13 +4,13 @@ metadata:
   name: app-routing
 spec:
   rules:
-  - host: iot-app.com
-    http:
-    paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: iot-application
-            port:
-              number: 8888
+    - host: iot-app.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: iot-application
+                port:
+                  number: 8888
